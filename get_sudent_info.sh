@@ -10,6 +10,7 @@ do
   echo "$USER_INFO" | grep API
   echo "$USER_INFO" | grep \"name\" |awk -F '"' '{print " | Name:   " $4}'
   echo "$USER_INFO" | grep \"url\" |awk -F '"' '{print " | GitHub: " $4}'
+  echo "$USER_INFO" | grep \"created_at\" |awk -F '"' '{print " | Created: " $4}'
   #curl -s "https://api.github.com/users/${line}" | grep \"name\" |awk -F '"' '{print " | Name:   " $4}'
   #curl -s "https://api.github.com/users/${line}" | grep \"url\" |awk -F '"' '{print " | GitHub: " $4}'
 done < "$input"
