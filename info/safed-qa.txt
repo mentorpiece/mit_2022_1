@@ -1,4 +1,2 @@
-это файл новый 
-файл супер текстовый
-safed-qa! 
-look at this picture!
+﻿Hello people!
+Как дела?! =)
